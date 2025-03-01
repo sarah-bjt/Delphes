@@ -1,0 +1,101 @@
+{
+    "tarot_cards": [
+      {
+        "name": "Le Mat",
+        "arcana": "Majeur",
+        "upright_meaning": "Nouveau départ, spontanéité, aventure",
+        "reversed_meaning": "Imprudence, naïveté, hésitation"
+      },
+      {
+        "name": "Le Magicien",
+        "arcana": "Majeur",
+        "upright_meaning": "Pouvoir, créativité, action",
+        "reversed_meaning": "Manipulation, manque de concentration, illusions"
+      },
+      {
+        "name": "La Papesse",
+        "arcana": "Majeur",
+        "upright_meaning": "Sagesse, intuition, connaissance cachée",
+        "reversed_meaning": "Secrets révélés, manque de compréhension, superficialité"
+      },
+      {
+        "name": "L'Impératrice",
+        "arcana": "Majeur",
+        "upright_meaning": "Fécondité, créativité, abondance",
+        "reversed_meaning": "Dépendance, stérilité, négligence"
+      },
+      {
+        "name": "L'Empereur",
+        "arcana": "Majeur",
+        "upright_meaning": "Autorité, structure, stabilité",
+        "reversed_meaning": "Domination, rigidité, insécurité"
+      },
+      {
+        "name": "Le Pape",
+        "arcana": "Majeur",
+        "upright_meaning": "Tradition, spiritualité, enseignement",
+        "reversed_meaning": "Dogmatisme, rébellion, mauvaise guidance"
+      },
+      {
+        "name": "Les Amoureux",
+        "arcana": "Majeur",
+        "upright_meaning": "Choix, amour, union",
+        "reversed_meaning": "Déséquilibre, conflit, mauvais choix"
+      },
+      {
+        "name": "Le Chariot",
+        "arcana": "Majeur",
+        "upright_meaning": "Volonté, triomphe, contrôle",
+        "reversed_meaning": "Manque de direction, échec, perte de contrôle"
+      },
+      {
+        "name": "La Justice",
+        "arcana": "Majeur",
+        "upright_meaning": "Vérité, équilibre, responsabilité",
+        "reversed_meaning": "Injustice, déséquilibre, malhonnêteté"
+      },
+      {
+        "name": "L'Hermite",
+        "arcana": "Majeur",
+        "upright_meaning": "Réflexion, solitude, introspection",
+        "reversed_meaning": "Isolement, fermeture d'esprit, solitude excessive"
+      },
+      {
+        "name": "La Roue de Fortune",
+        "arcana": "Majeur",
+        "upright_meaning": "Changement, destin, opportunités",
+        "reversed_meaning": "Mauvaise chance, résistance au changement, obstacles"
+      },
+      {
+        "name": "La Force",
+        "arcana": "Majeur",
+        "upright_meaning": "Courage, patience, maîtrise de soi",
+        "reversed_meaning": "Faiblesse, manque de courage, impulsivité"
+      },
+      {
+        "name": "Le Pendu",
+        "arcana": "Majeur",
+        "upright_meaning": "Sacrifice, perspective, pause",
+        "reversed_meaning": "Stagnation, égoïsme, résistance"
+      },
+      {
+        "name": "La Mort",
+        "arcana": "Majeur",
+        "upright_meaning": "Transformation, fin, renouveau",
+        "reversed_meaning": "Résistance au changement, stagnation, peur de l'inconnu"
+      },
+      {
+        "name": "Tempérance",
+        "arcana": "Majeur",
+        "upright_meaning": "Équilibre, modération, harmonie",
+        "reversed_meaning": "Excès, déséquilibre, impatience"
+      },
+      {
+        "name": "Le Diable",
+        "arcana": "Majeur",
+        "upright_meaning": "Attachement, matérialisme, tentation",
+        "reversed_meaning": "Libération, indépendance, rétablissement"
+      }
+    ]
+}
+  
