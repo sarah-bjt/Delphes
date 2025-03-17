@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+.home-button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    background-color: none;
+    border-radius: 0px;
+    font-family: "UnifrakturCook", serif;
+}
+/* .home-button img {
+    max-height: 70px;
+} */
+
+button {
+    font-family: "UnifrakturCook", serif;
+    background: linear-gradient(135deg, #c97575, #cc7171);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(119, 27, 27, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(217, 80, 252);
+    background: linear-gradient(135deg, #fca1a1, #fa8e8e);
+  }
+
+
+
+

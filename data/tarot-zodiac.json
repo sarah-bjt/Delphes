@@ -1,0 +1,592 @@
+{
+    "zodiac_signs": [
+      {
+        "id":1,
+        "name": "Bélier",
+        "start_date": "21 mars",
+        "end_date": "19 avril",
+        "element": "Feu",
+        "traits": ["Énergique", "Courageux", "Impulsif"]
+      },
+      {
+        "id":2,
+        "name": "Taureau",
+        "start_date": "20 avril",
+        "end_date": "20 mai",
+        "element": "Terre",
+        "traits": ["Patient", "Fiable", "Têtu"]
+      },
+      {
+        "id":3,
+        "name": "Gémeaux",
+        "start_date": "21 mai",
+        "end_date": "20 juin",
+        "element": "Air",
+        "traits": ["Curieux", "Adaptable", "Indécis"]
+      },
+      {
+        "id":4,
+        "name": "Cancer",
+        "start_date": "21 juin",
+        "end_date": "22 juillet",
+        "element": "Eau",
+        "traits": ["Émotionnel", "Protecteur", "Susceptible"]
+      },
+      {
+        "id":5,
+        "name": "Lion",
+        "start_date": "23 juillet",
+        "end_date": "22 août",
+        "element": "Feu",
+        "traits": ["Charismatique", "Ambitieux", "Autoritaire"]
+      },
+      {
+        "id":6,
+        "name": "Vierge",
+        "start_date": "23 août",
+        "end_date": "22 septembre",
+        "element": "Terre",
+        "traits": ["Analytique", "Discipliné", "Critique"]
+      },
+      {
+        "id":7,
+        "name": "Balance",
+        "start_date": "23 septembre",
+        "end_date": "22 octobre",
+        "element": "Air",
+        "traits": ["Diplomate", "Indécis", "Sociable"]
+      },
+      {
+        "id":8,
+        "name": "Scorpion",
+        "start_date": "23 octobre",
+        "end_date": "21 novembre",
+        "element": "Eau",
+        "traits": ["Passionné", "Mystérieux", "Intense"]
+      },
+      {
+        "id":9,
+        "name": "Sagittaire",
+        "start_date": "22 novembre",
+        "end_date": "21 décembre",
+        "element": "Feu",
+        "traits": ["Optimiste", "Aventurier", "Imprudent"]
+      },
+      {
+        "id":10,
+        "name": "Capricorne",
+        "start_date": "22 décembre",
+        "end_date": "19 janvier",
+        "element": "Terre",
+        "traits": ["Pragmatique", "Ambitieux", "Sérieux"]
+      },
+      {
+        "id":11,
+        "name": "Verseau",
+        "start_date": "20 janvier",
+        "end_date": "18 février",
+        "element": "Air",
+        "traits": ["Indépendant", "Visionnaire", "Détaché"]
+      },
+      {
+        "id":12,
+        "name": "Poissons",
+        "start_date": "19 février",
+        "end_date": "20 mars",
+        "element": "Eau",
+        "traits": ["Créatif", "Empathique", "Rêveur"]
+      }
+    ],
+    "tarot_cards": [
+      {
+        "name": "Le Mat",
+        "arcana": "Majeur",
+        "upright_meaning": "Nouveau départ, spontanéité, aventure",
+        "reversed_meaning": "Imprudence, naïveté, hésitation"
+      },
+      {
+        "name": "Le Magicien",
+        "arcana": "Majeur",
+        "upright_meaning": "Pouvoir, créativité, action",
+        "reversed_meaning": "Manipulation, manque de concentration, illusions"
+      },
+      {
+        "name": "La Papesse",
+        "arcana": "Majeur",
+        "upright_meaning": "Sagesse, intuition, connaissance cachée",
+        "reversed_meaning": "Secrets révélés, manque de compréhension, superficialité"
+      },
+      {
+        "name": "L'Impératrice",
+        "arcana": "Majeur",
+        "upright_meaning": "Fécondité, créativité, abondance",
+        "reversed_meaning": "Dépendance, stérilité, négligence"
+      },
+      {
+        "name": "L'Empereur",
+        "arcana": "Majeur",
+        "upright_meaning": "Autorité, structure, stabilité",
+        "reversed_meaning": "Domination, rigidité, insécurité"
+      },
+      {
+        "name": "Le Pape",
+        "arcana": "Majeur",
+        "upright_meaning": "Tradition, spiritualité, enseignement",
+        "reversed_meaning": "Dogmatisme, rébellion, mauvaise guidance"
+      },
+      {
+        "name": "Les Amoureux",
+        "arcana": "Majeur",
+        "upright_meaning": "Choix, amour, union",
+        "reversed_meaning": "Déséquilibre, conflit, mauvais choix"
+      },
+      {
+        "name": "Le Chariot",
+        "arcana": "Majeur",
+        "upright_meaning": "Volonté, triomphe, contrôle",
+        "reversed_meaning": "Manque de direction, échec, perte de contrôle"
+      },
+      {
+        "name": "La Justice",
+        "arcana": "Majeur",
+        "upright_meaning": "Vérité, équilibre, responsabilité",
+        "reversed_meaning": "Injustice, déséquilibre, malhonnêteté"
+      },
+      {
+        "name": "L'Hermite",
+        "arcana": "Majeur",
+        "upright_meaning": "Réflexion, solitude, introspection",
+        "reversed_meaning": "Isolement, fermeture d'esprit, solitude excessive"
+      },
+      {
+        "name": "La Roue de Fortune",
+        "arcana": "Majeur",
+        "upright_meaning": "Changement, destin, opportunités",
+        "reversed_meaning": "Mauvaise chance, résistance au changement, obstacles"
+      },
+      {
+        "name": "La Force",
+        "arcana": "Majeur",
+        "upright_meaning": "Courage, patience, maîtrise de soi",
+        "reversed_meaning": "Faiblesse, manque de courage, impulsivité"
+      },
+      {
+        "name": "Le Pendu",
+        "arcana": "Majeur",
+        "upright_meaning": "Sacrifice, perspective, pause",
+        "reversed_meaning": "Stagnation, égoïsme, résistance"
+      },
+      {
+        "name": "La Mort",
+        "arcana": "Majeur",
+        "upright_meaning": "Transformation, fin, renouveau",
+        "reversed_meaning": "Résistance au changement, stagnation, peur de l'inconnu"
+      },
+      {
+        "name": "Tempérance",
+        "arcana": "Majeur",
+        "upright_meaning": "Équilibre, modération, harmonie",
+        "reversed_meaning": "Excès, déséquilibre, impatience"
+      },
+      {
+        "name": "Le Diable",
+        "arcana": "Majeur",
+        "upright_meaning": "Attachement, matérialisme, tentation",
+        "reversed_meaning": "Libération, indépendance, rétablissement"
+      },
+    {
+      "name": "As de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Nouveau départ émotionnel, amour, créativité",
+      "reversed_meaning": "Blocage émotionnel, tristesse, repli sur soi"
+    },
+    {
+      "name": "Deux de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Union, partenariat, connexion spirituelle",
+      "reversed_meaning": "Déséquilibre, conflits relationnels, séparation"
+    },
+    {
+      "name": "Trois de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Célébration, amitié, joie",
+      "reversed_meaning": "Excès, commérages, rupture"
+    },
+    {
+      "name": "Quatre de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Introspection, apathie, opportunités manquées",
+      "reversed_meaning": "Nouveaux aperçus, acceptation, gratitude"
+    },
+    {
+      "name": "Cinq de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Perte, regret, tristesse",
+      "reversed_meaning": "Acceptation, espoir, lâcher prise"
+    },
+    {
+      "name": "Six de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Nostalgie, souvenirs, enfance",
+      "reversed_meaning": "Attachement au passé, illusions, refus d’avancer"
+    },
+    {
+      "name": "Sept de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Choix, illusions, imagination",
+      "reversed_meaning": "Clarté, concentration, prise de décision"
+    },
+    {
+      "name": "Huit de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Abandon, quête spirituelle, transition",
+      "reversed_meaning": "Peur du changement, stagnation, hésitation"
+    },
+    {
+      "name": "Neuf de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Satisfaction, bonheur, abondance",
+      "reversed_meaning": "Excès, superficialité, désillusion"
+    },
+    {
+      "name": "Dix de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Harmonie familiale, bonheur, amour durable",
+      "reversed_meaning": "Désaccords familiaux, faux bonheur, rupture"
+    },
+    {
+      "name": "Valet de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Sensibilité, créativité, nouvelles émotions",
+      "reversed_meaning": "Immaturité émotionnelle, rêve éveillé, déception"
+    },
+    {
+      "name": "Cavalier de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Romantisme, charme, imagination",
+      "reversed_meaning": "Illusions, instabilité émotionnelle, manipulation"
+    },
+    {
+      "name": "Reine de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Compassion, intuition, amour inconditionnel",
+      "reversed_meaning": "Dépendance émotionnelle, hypersensibilité, blocage intuitif"
+    },
+    {
+      "name": "Roi de Coupes",
+      "arcana": "Mineur",
+      "suite": "Coupes",
+      "upright_meaning": "Équilibre émotionnel, sagesse, diplomatie",
+      "reversed_meaning": "Manipulation émotionnelle, froideur, instabilité"
+    },
+    {
+      "name": "As de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Inspiration, nouveau projet, énergie créative",
+      "reversed_meaning": "Retard, manque de motivation, opportunité manquée"
+    },
+    {
+      "name": "Deux de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Prise de décision, planification, exploration",
+      "reversed_meaning": "Indécision, peur de l'inconnu, manque de vision"
+    },
+    {
+      "name": "Trois de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Expansion, progrès, opportunités",
+      "reversed_meaning": "Retards, attentes non satisfaites, manque de direction"
+    },
+    {
+      "name": "Quatre de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Célébration, stabilité, harmonie",
+      "reversed_meaning": "Instabilité, tension familiale, retard dans les récompenses"
+    },
+    {
+      "name": "Cinq de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Compétition, conflits, lutte",
+      "reversed_meaning": "Évitement des conflits, résolution, compromis"
+    },
+    {
+      "name": "Six de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Succès, reconnaissance, victoire",
+      "reversed_meaning": "Échec, manque de reconnaissance, orgueil excessif"
+    },
+    {
+      "name": "Sept de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Défense, persévérance, résistance",
+      "reversed_meaning": "Épuisement, renoncement, manque de confiance"
+    },
+    {
+      "name": "Huit de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Rapidité, action, progression",
+      "reversed_meaning": "Retards, confusion, précipitation imprudente"
+    },
+    {
+      "name": "Neuf de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Résilience, prudence, endurance",
+      "reversed_meaning": "Fatigue, paranoïa, obstacles persistants"
+    },
+    {
+      "name": "Dix de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Fardeau, responsabilités excessives, épuisement",
+      "reversed_meaning": "Déléguer, soulagement, allègement des charges"
+    },
+    {
+      "name": "Valet de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Aventure, découverte, enthousiasme",
+      "reversed_meaning": "Immaturité, manque de direction, distraction"
+    },
+    {
+      "name": "Cavalier de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Énergie, impulsivité, passion",
+      "reversed_meaning": "Imprudence, arrogance, inconstance"
+    },
+    {
+      "name": "Reine de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Charisme, assurance, leadership",
+      "reversed_meaning": "Manipulation, jalousie, domination"
+    },
+    {
+      "name": "Roi de Bâtons",
+      "arcana": "Mineur",
+      "suite": "Bâtons",
+      "upright_meaning": "Vision, leadership, ambition",
+      "reversed_meaning": "Autoritarisme, impulsivité, contrôle excessif"
+    },
+    {
+      "name": "As de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Nouvelle opportunité financière, prospérité, abondance",
+      "reversed_meaning": "Manque d'opportunité, retard financier, instabilité"
+    },
+    {
+      "name": "Deux de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Équilibre, gestion du temps, adaptabilité",
+      "reversed_meaning": "Surcharge, désorganisation, déséquilibre financier"
+    },
+    {
+      "name": "Trois de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Travail d'équipe, collaboration, compétences maîtrisées",
+      "reversed_meaning": "Manque de coordination, mauvaise planification, conflit au travail"
+    },
+    {
+      "name": "Quatre de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Sécurité financière, contrôle, stabilité matérielle",
+      "reversed_meaning": "Avarice, peur de perdre, attachement excessif à l'argent"
+    },
+    {
+      "name": "Cinq de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Perte financière, difficulté matérielle, isolement",
+      "reversed_meaning": "Rétablissement, espoir, entraide"
+    },
+    {
+      "name": "Six de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Générosité, charité, équilibre dans les échanges",
+      "reversed_meaning": "Déséquilibre, dépendance financière, égoïsme"
+    },
+    {
+      "name": "Sept de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Patience, investissement, croissance à long terme",
+      "reversed_meaning": "Frustration, effort non récompensé, impatience"
+    },
+    {
+      "name": "Huit de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Travail acharné, apprentissage, perfectionnement",
+      "reversed_meaning": "Négligence, perfectionnisme excessif, manque de progrès"
+    },
+    {
+      "name": "Neuf de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Indépendance financière, réussite, luxe",
+      "reversed_meaning": "Dépendance, instabilité, excès de matérialisme"
+    },
+    {
+      "name": "Dix de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Stabilité financière, héritage, prospérité durable",
+      "reversed_meaning": "Conflits familiaux, pertes financières, instabilité"
+    },
+    {
+      "name": "Valet de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Nouvelles opportunités, apprentissage, ambition",
+      "reversed_meaning": "Manque de planification, négligence, paresse"
+    },
+    {
+      "name": "Cavalier de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Fiabilité, responsabilité, persévérance",
+      "reversed_meaning": "Rigidité, manque de flexibilité, lenteur excessive"
+    },
+    {
+      "name": "Reine de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Générosité, praticité, abondance",
+      "reversed_meaning": "Dépendance, insécurité financière, matérialisme excessif"
+    },
+    {
+      "name": "Roi de Deniers",
+      "arcana": "Mineur",
+      "suite": "Deniers",
+      "upright_meaning": "Succès matériel, leadership, discipline",
+      "reversed_meaning": "Corruption, avidité, contrôle excessif"
+    },
+    {
+      "name": "As d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Clarté mentale, vérité, nouvelles idées",
+      "reversed_meaning": "Confusion, tromperie, manque de clarté"
+    },
+    {
+      "name": "Deux d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Indécision, blocage, équilibre fragile",
+      "reversed_meaning": "Évitement, prise de décision difficile, confusion"
+    },
+    {
+      "name": "Trois d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Cœur brisé, tristesse, perte",
+      "reversed_meaning": "Guérison, réconciliation, soulagement de la douleur"
+    },
+    {
+      "name": "Quatre d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Repos, récupération, contemplation",
+      "reversed_meaning": "Épuisement, stress, refus de se reposer"
+    },
+    {
+      "name": "Cinq d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Conflit, victoire à la Pyrrhus, tromperie",
+      "reversed_meaning": "Réconciliation, paix, fin des tensions"
+    },
+    {
+      "name": "Six d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Transition, voyage, passage à autre chose",
+      "reversed_meaning": "Résistance au changement, stagnation, fuite des problèmes"
+    },
+    {
+      "name": "Sept d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Tromperie, ruse, stratégie",
+      "reversed_meaning": "Vérité révélée, remords, conscience éveillée"
+    },
+    {
+      "name": "Huit d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Restriction, peur, sentiment d'emprisonnement",
+      "reversed_meaning": "Libération, prise de conscience, regain de confiance"
+    },
+    {
+      "name": "Neuf d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Anxiété, cauchemars, culpabilité",
+      "reversed_meaning": "Guérison, soulagement, fin des angoisses"
+    },
+    {
+      "name": "Dix d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Trahison, fin douloureuse, échec",
+      "reversed_meaning": "Renaissance, apprentissage de l'épreuve, nouveau départ"
+    },
+    {
+      "name": "Valet d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Curiosité, vigilance, nouvelles idées",
+      "reversed_meaning": "Rumeur, indiscrétion, manque de tact"
+    },
+    {
+      "name": "Cavalier d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Ambition, action rapide, détermination",
+      "reversed_meaning": "Imprudence, précipitation, impulsivité"
+    },
+    {
+      "name": "Reine d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Intelligence, clarté, vérité",
+      "reversed_meaning": "Cruauté, froideur, manipulation"
+    },
+    {
+      "name": "Roi d'Épées",
+      "arcana": "Mineur",
+      "suite": "Épées",
+      "upright_meaning": "Autorité, logique, intégrité",
+      "reversed_meaning": "Tyrannie, abus de pouvoir, rigidité mentale"
+    }
+  ]
+    
+}
+  
