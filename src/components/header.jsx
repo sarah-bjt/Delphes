@@ -5,14 +5,14 @@ import "../styles/button.css";
 
 export default function Header() {
   return (
-    <header className="header-outer"> 
-    <div className="header-inner responsive-wrapper">
+    <header> 
+    <div>
       <div className="header-home">
-        <Link to="/" className="button">Delphes</Link>
+        <Link to="/" >Delphes</Link>
       </div>
       <nav className="header-navigation">
-        <Link to="/horoscope" className="button">Horoscope</Link>
-        <Link to="/tarot" className="button">Tarot</Link>
+        <Link to="/horoscope">Horoscope</Link>
+        <Link to="/tarot">Tarot</Link>
       </nav>
     </div>
   </header>

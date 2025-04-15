@@ -1,4 +1,3 @@
-// import "./SigneGallerie.css";
 import TarotCard from "./tarot-card.jsx";
 import jeu_de_carte from "../../data/tarot-zodiac.json";
 

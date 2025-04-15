@@ -1,5 +1,3 @@
-// import "./Card.css";
-
 export default function TarotCard({ name, arcana, suite, upright_meaning, reversed_meaning,}) {
     return (
       <div className="card">
