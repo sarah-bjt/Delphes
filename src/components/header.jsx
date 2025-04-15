@@ -1,7 +1,7 @@
 import React from "react";
-import AstrologieButton from './buttons/AstrologieButton.jsx';
-import TarotButton from './buttons/TarotButton.jsx';
-import HomeButton from "./buttons/HomeButton.jsx";
+import AstrologieButton from './buttons/astrologie-utton.jsx';
+import TarotButton from './buttons/tarot-button.jsx';
+import HomeButton from "./buttons/home-button.jsx";
 import "../styles/header.css"
 
 export default function Header({ onNavigate }) {
