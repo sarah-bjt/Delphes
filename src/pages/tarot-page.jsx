@@ -8,9 +8,11 @@ export default function TarotPage(){
     return (
         <div className="page-container">
             <Header/>
+            <main>
             <h1>Les Cartes de Tarot</h1>
             <TarotDraw/>
             {/* <TarotGallerie/> */}
+            </main>
             <Footer/>
         </div>
     )

@@ -1,5 +1,10 @@
+
+
 body {
     background-color: rgb(255, 170, 170);
+    margin: 0;
+    padding: 10px;
+    height: 100%;
 } 
 
 .page-container {

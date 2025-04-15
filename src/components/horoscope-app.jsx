@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React,{ useState, useEffect } from "react";
 import AstroCard from "./horoscope";
 import signesData from "../../data/tarot-zodiac.json";
 
 export default function HoroscopeApp() {
   const [dateNaissance, setDateNaissance] = useState("");
-  const [signe, setSigne] = useState(null);
+  const [signe, setSigne] = useState("");
 
   // Fonction pour enlever les accents
 const removeAccents = (str) => {
@@ -53,6 +53,22 @@ const removeAccents = (str) => {
     const signeTrouvé = getSigneAstro(dateNaissance);
     setSigne(signeTrouvé);
   };
+
+  useEffect(() => {
+    const savedDate = localStorage.getItem("dateNaissance");
+    if (savedDate) {
+      setDateNaissance(savedDate);
+      const signeTrouvé = getSigneAstro(savedDate);
+      setSigne(signeTrouvé);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (dateNaissance) {
+      console.log("date de naissance : ", dateNaissance);
+      localStorage.setItem("dateNaissance", dateNaissance);
+    }
+  }, [dateNaissance]);
 
   return (
     <div>

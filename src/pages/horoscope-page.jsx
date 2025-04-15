@@ -8,9 +8,11 @@ export default function HoroscopePage(){
     return (
         <div className="page-container">
             <Header/>
+            <main>
             <h1>Trouver votre horoscope</h1>
             <HoroscopeApp/>
             <h1>Et quelques infos sur les signes astro</h1>
+            </main>
             {/* <SigneGallerie/> */}
             <Footer/>
         </div>
