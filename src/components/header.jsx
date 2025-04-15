@@ -1,22 +1,20 @@
 import React from "react";
-import AstrologieButton from './buttons/astrologie-utton.jsx';
-import TarotButton from './buttons/tarot-button.jsx';
-import HomeButton from "./buttons/home-button.jsx";
+import { Link } from 'react-router-dom'
 import "../styles/header.css"
+import "../styles/button.css";
 
-export default function Header({ onNavigate }) {
+export default function Header() {
   return (
     <header className="header-outer"> 
-	    <div className="header-inner responsive-wrapper">
-        <div className="header-home">
-          <HomeButton onNavigate={onNavigate} />
-		    </div>
-        <nav className="header-navigation">
-          <AstrologieButton onNavigate={onNavigate} />
-          <TarotButton onNavigate={onNavigate} />
-        </nav>
+    <div className="header-inner responsive-wrapper">
+      <div className="header-home">
+        <Link to="/" className="button">Delphes</Link>
       </div>
-    </header>
-  );
+      <nav className="header-navigation">
+        <Link to="/horoscope" className="button">Horoscope</Link>
+        <Link to="/tarot" className="button">Tarot</Link>
+      </nav>
+    </div>
+  </header>
+);
 }
-

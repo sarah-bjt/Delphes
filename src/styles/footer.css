@@ -1,0 +1,26 @@
+footer {
+    /* background: linear-gradient(135deg, #f8c1e2, #e6a8ff); */
+    color: #3e004f;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 15px;
+    border-top: 2px solid rgb(217, 80, 252);
+    /* box-shadow: 0 -4px 20px rgb(217, 80, 252); */
+    position: relative;
+    margin-top: 3%;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    line-height: 1.7;
+  }
+  
+  footer p:first-child {
+    font-style: italic;
+    color: #5e006e;
+  }
+  
+  footer p:last-child {
+    font-weight: bold;
+  }
+  
