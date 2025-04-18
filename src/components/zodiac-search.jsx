@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../styles/signe-gallerie.css";
-import SignCard from "./sign-card.jsx";
-import signes_astro from "../../data/tarot-zodiac.json";
+import "../styles/zodiac-gallerie.css";
+import ZodiacCard from "./zodiac-card.jsx";
+import zodiacData from "../../data/tarot-zodiac.json";
 
-export default function SignSearch() {
+export default function ZodiacSearch() {
   const [selectedElements, setSelectedElements] = useState([]);
 
   const handleCheckboxChange = (event) => {
@@ -15,21 +15,20 @@ export default function SignSearch() {
     );
   };
 
-  // Filtrer les signes en fonction des éléments sélectionnés
   const filteredSigns = selectedElements.length === 0
-    ? [] // Afficher tous les signes si aucun élément n'est sélectionné
-    : signes_astro.zodiac_signs.filter(sign => 
+    ? []
+    : zodiacData.zodiac_signs.filter(sign => 
         selectedElements.includes(sign.element)
       );
 
   return (
-    <div className="sign-search-container">
+    <div>
       <h1>Les signes astrologiques par types</h1>
       
-      <fieldset className="element-filters">
+      <fieldset>
         <legend>Choisis un ou plusieurs types:</legend>
 
-        <div className="filter-option">
+        <div>
           <input
             type="checkbox"
             id="Feu"
@@ -40,7 +39,7 @@ export default function SignSearch() {
           <label htmlFor="Feu">Feu</label>
         </div>
 
-        <div className="filter-option">
+        <div>
           <input
             type="checkbox"
             id="Eau"
@@ -51,7 +50,7 @@ export default function SignSearch() {
           <label htmlFor="Eau">Eau</label>
         </div>
 
-        <div className="filter-option">
+        <div>
           <input
             type="checkbox"
             id="Air"
@@ -62,7 +61,7 @@ export default function SignSearch() {
           <label htmlFor="Air">Air</label>
         </div>
 
-        <div className="filter-option">
+        <div>
           <input
             type="checkbox"
             id="Terre"
@@ -75,12 +74,12 @@ export default function SignSearch() {
       </fieldset>
 
       {selectedElements.length > 0 && (
-        <p className="filter-summary">Éléments sélectionnés : {selectedElements.join(", ")}</p>
+        <p>Éléments sélectionnés : {selectedElements.join(", ")}</p>
       )}
 
       <div id="signe-gallerie">
         {filteredSigns.map((sign) => (
-          <SignCard
+          <ZodiacCard
             key={sign.id}
             name={sign.name}
             start_date={sign.start_date}
@@ -92,7 +91,7 @@ export default function SignSearch() {
       </div>
       
       {filteredSigns.length === 0 && (
-        <p className="no-results">Aucun signe ne correspond à votre sélection.</p>
+        <p>Aucun signe ne correspond à votre sélection.</p>
       )}
     </div>
   );

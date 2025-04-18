@@ -1,6 +1,6 @@
 import "../styles/card.css";
 
-export default function SignCard({ name, start_date, end_date, element, traits}) {
+export default function ZodiacCard({ name, start_date, end_date, element, traits}) {
   return (
     <div className="card">
       <div className="description">

@@ -1,74 +1,85 @@
 import React,{ useState, useEffect } from "react";
-import AstroCard from "./horoscope";
-import signesData from "../../data/tarot-zodiac.json";
+import AstroCard from "./horoscope.jsx";
+import zodiacData from "../../data/tarot-zodiac.json";
 
 export default function HoroscopeApp() {
-  const [dateNaissance, setDateNaissance] = useState("");
-  const [signe, setSigne] = useState("");
+  const [birthDate, setbirthDate] = useState("");
+  const [sign, setsign] = useState("");
 
-  // Fonction pour enlever les accents
+// take off accents
 const removeAccents = (str) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 };
 
-  // Convertit une date "21 mars" en "03-21"
-  const convertirDate = (dateStr) => {
-    const moisMap = {
+// convert date in numbers
+  const convertDate = (dateStr) => {
+    const monthMap = {
       "janvier": "01", "février": "02", "mars": "03", "avril": "04", "mai": "05",
       "juin": "06", "juillet": "07", "août": "08", "septembre": "09",
       "octobre": "10", "novembre": "11", "décembre": "12"
     };
-    const [jour, mois] = dateStr.split(" ");
-    return `${moisMap[mois]}-${jour.padStart(2, "0")}`;
+    const [day, month] = dateStr.split(" ");
+    return `${monthMap[month]}-${day.padStart(2, "0")}`;
   };
 
-
-  // Trouve le signe astrologique
-  const getSigneAstro = (date) => {
-    if (!date) return null;
-    
-    const moisJour = date.slice(5); // Garde MM-JJ (ex: "03-21")
-    console.log("Date formatée:", moisJour); // Debug
-
-    const signeTrouvé = signesData.zodiac_signs.find(signe => {
-      const debut = convertirDate(signe.start_date);
-      const fin = convertirDate(signe.end_date);
-      console.log(`Vérification : ${signe.name} (${debut} - ${fin})`);
-      return (moisJour >= debut && moisJour <= fin);
-    });
-
-    if (!signeTrouvé) {
-      console.log("Aucun signe trouvé !");
-      return null;
+// find zodiac sign
+const getZodiacSign = (date) => {
+  if (!date) return null;
+  
+  const monthDate = date.slice(5); // Garde MM-JJ (ex: "03-21")
+  console.log("Date formatée:", monthDate);
+  
+  // Cas spécial pour le Capricorne (22 décembre - 19 janvier)
+  if ((monthDate >= "12-22" && monthDate <= "12-31") || 
+      (monthDate >= "01-01" && monthDate <= "01-19")) {
+        console.log("signe trouvé: capricorne");
+    return "capricorne";
+  }
+  
+  const signFound = zodiacData.zodiac_signs.find(sign => {
+    // On ignore le Capricorne car déjà traité
+    if (removeAccents(sign.name.toLowerCase()) === "capricorne") {
+      return false;
     }
+    
+    const start = convertDate(sign.start_date);
+    const end = convertDate(sign.end_date);
+    console.log(`Vérification : ${sign.name} (${start} - ${end})`);
+    return (monthDate >= start && monthDate <= end);
+  });
 
-    const signeSansAccent = removeAccents(signeTrouvé.name.toLowerCase());
-    console.log("Signe trouvé:", signeSansAccent);
-    return signeSansAccent;
-  };
+  if (!signFound) {
+    console.log("Aucun signe trouvé !");
+    return null;
+  }
 
-  // Soumission du formulaire
+  const signNoAccent = removeAccents(signFound.name.toLowerCase());
+  console.log("signe trouvé:", signNoAccent);
+  return signNoAccent;
+};
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const signeTrouvé = getSigneAstro(dateNaissance);
-    setSigne(signeTrouvé);
+    const signFound = getZodiacSign(birthDate);
+    setsign(signFound);
   };
 
   useEffect(() => {
-    const savedDate = localStorage.getItem("dateNaissance");
+    const savedDate = localStorage.getItem("birthDate");
     if (savedDate) {
-      setDateNaissance(savedDate);
-      const signeTrouvé = getSigneAstro(savedDate);
-      setSigne(signeTrouvé);
+      setbirthDate(savedDate);
+      const signFound = getZodiacSign(savedDate);
+      setsign(signFound);
     }
   }, []);
 
   useEffect(() => {
-    if (dateNaissance) {
-      console.log("date de naissance : ", dateNaissance);
-      localStorage.setItem("dateNaissance", dateNaissance);
+    if (birthDate) {
+      console.log("date de naissance : ", birthDate);
+      localStorage.setItem("birthDate", birthDate);
     }
-  }, [dateNaissance]);
+  }, [birthDate]);
 
   return (
     <div>
@@ -78,18 +89,18 @@ const removeAccents = (str) => {
           Entrez votre date de naissance :
           <input
             type="date"
-            value={dateNaissance}
-            onChange={(e) => setDateNaissance(e.target.value)}
+            value={birthDate}
+            onChange={(e) => setbirthDate(e.target.value)}
             required
           />
         </label>
         <button type="submit">Voir mon horoscope</button>
       </form>
 
-      {signe ? (
+      {sign ? (
         <>
-          <h2>Votre signe astrologique est : {signe}</h2>
-          <AstroCard signe={signe} />
+          <h2>Votre signe astrologique est : {sign}</h2>
+          <AstroCard sign={sign} />
         </>
       ) : (
         <p>Aucun signe trouvé pour cette date.</p>

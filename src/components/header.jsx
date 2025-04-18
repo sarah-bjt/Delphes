@@ -11,7 +11,7 @@ export default function Header() {
         <Link to="/" >Delphes</Link>
       </div>
       <nav className="header-navigation">
-        <Link to="/horoscope">Horoscope</Link>
+        <Link to="/zodiac">Astrologie</Link>
         <Link to="/tarot">Tarot</Link>
       </nav>
     </div>

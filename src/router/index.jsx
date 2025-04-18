@@ -1,6 +1,6 @@
 import { createBrowserRouter,  Navigate } from "react-router-dom";
 import HomePage from '../pages/home-page.jsx'
-import HoroscopePage from '../pages/horoscope-page.jsx'
+import ZodiacPage from '../pages/zodiac-page.jsx'
 import TarotPage from '../pages/tarot-page.jsx'
 
 export default createBrowserRouter([
@@ -13,8 +13,8 @@ export default createBrowserRouter([
     element: <TarotPage />,
   },
   {
-    path:"/horoscope",
-    element: <HoroscopePage />,
+    path:"/zodiac",
+    element: <ZodiacPage />,
   },
   {
     path: "*",

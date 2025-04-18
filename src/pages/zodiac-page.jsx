@@ -1,11 +1,11 @@
 import Header from '../components/header.jsx'; 
-import Footer from '../components/footer';
-import HoroscopeApp from "../components/horoscope-app";
+import Footer from '../components/footer.jsx';
+import HoroscopeApp from "../components/horoscope-app.jsx";
 // import SigneGallerie from "../components/sign-gallery";
 import "../styles/page.css";
-import SignSearch from '../components/sign-search.jsx';
+import ZodiacSearch from '../components/zodiac-search.jsx';
 
-export default function HoroscopePage(){
+export default function ZodiacPage(){
     return (
         <div className="page-container">
             <Header/>
@@ -13,9 +13,8 @@ export default function HoroscopePage(){
             <h1>Trouver votre horoscope</h1>
             <HoroscopeApp/>
             <h1>Et quelques infos sur les signes astro</h1>
-            <SignSearch/>
+            <ZodiacSearch/>
             </main>
-            {/* <SigneGallerie/> */}
             <Footer/>
         </div>
 
