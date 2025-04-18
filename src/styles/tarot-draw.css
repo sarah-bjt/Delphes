@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-.tarot-container {
+/* .tarot-container {
   text-align: center;
   padding: 20px;
   color: #f5f5f5;
   min-height: 100vh;
-}
+} */
   
-.tarot-title {
+/* .tarot-title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: "UnifrakturCook", serif;
-}
+} */
   
 .tarot-deck {
   display: flex;
@@ -90,9 +90,8 @@
   }
 }
 
-
 .tarot-results {
-  margin-top: 30px;
+  margin: 30px;
 }
   
 .tarot-card-revealed {

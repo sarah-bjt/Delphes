@@ -73,10 +73,6 @@ export default function ZodiacSearch() {
         </div>
       </fieldset>
 
-      {selectedElements.length > 0 && (
-        <p>Éléments sélectionnés : {selectedElements.join(", ")}</p>
-      )}
-
       <div id="gallerie">
         {filteredSigns.map((sign) => (
           <ZodiacCard
@@ -89,10 +85,6 @@ export default function ZodiacSearch() {
           />
         ))}
       </div>
-      
-      {filteredSigns.length === 0 && (
-        <p>Aucun signe ne correspond à votre sélection.</p>
-      )}
     </div>
   );
 }

@@ -4,6 +4,8 @@ import TarotDraw from "../components/tarot-draw.jsx";
 import "../styles/page.css";
 import TarotSearch from '../components/tarot-search.jsx';
 
+
+
 export default function TarotPage(){
     return (
         <div className="page-container">
@@ -11,6 +13,7 @@ export default function TarotPage(){
             <main>
                 <TarotDraw/>
                 <TarotSearch/>
+
             </main>
             <Footer/>
         </div>

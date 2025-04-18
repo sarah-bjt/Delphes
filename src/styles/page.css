@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 
 body {
@@ -15,4 +16,11 @@ body {
 
 main {
     flex: 1; 
+}
+
+h1 {
+    font-family: "UnifrakturCook", serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
 }
