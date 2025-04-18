@@ -12,8 +12,6 @@ export default function TarotHistory() {
 
   return (
     <div >
-      <h1 >Historique des Tirages</h1>
-      <Link to="/tarot"><button>Retourner au tirage</button></Link>
       <button onClick={() => {
         localStorage.removeItem("tarotHistory");
         setHistory([]);

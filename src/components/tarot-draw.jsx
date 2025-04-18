@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
 import tarotDeck from "../../data/tarot-zodiac.json";
 import "../styles/tarot-draw.css";
 
@@ -47,12 +46,6 @@ export default function TarotDraw() {
 
   return (
     <div className="tarot-container">
-      <h1>Tirage de Tarot</h1>
-      <h2>Choisissez 3 cartes : Passé, Présent, Futur</h2>
-
-      <Link to="/historique_tirage">
-        <button>Voir l'historique des tirages</button>
-      </Link>
 
       {drawnCards.length > 0 && (
         <button className="redo-button" onClick={redoDraw}>
