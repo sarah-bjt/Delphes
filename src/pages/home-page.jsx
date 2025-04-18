@@ -8,11 +8,17 @@ export default function HomePage(){
             < Header/>
             <main>
             <h1>Bienvenue à Delphes</h1>
-            <p>Delphes (en grec ancien et grec moderne Δελφοί, Delphoí) est le site d'un sanctuaire panhellénique,
-                situé au pied du mont Parnasse, en Phocide, où parle l'oracle d'Apollon à travers sa prophétesse, 
-                la Pythie, qui était assise dans une salle du temple d'Apollon. Elle répondait aux questions qui lui étaient posées ; 
-                ces réponses étaient aussitôt traduites en phrases par des prêtres. Delphes abrite également l'Omphalos ou « nombril du monde ».</p>
-            <p> Ici vous pouvez lire votre avenir grâce aux cartes ou aux astres.</p>
+            <p>
+                Au pied du mont Parnasse, là où le souffle sacré d'Apollon traverse les pierres antiques, se trouve Delphes -  
+                berceau de sagesse et de mystères. Jadis, la Pythie transmettait ici les paroles divines, 
+                guidée par les échos du monde invisible. Les prêtres traduisaient ses murmures en prophéties, 
+                révélant aux mortels leur destinée.
+            </p>
+            <p>
+                Aujourd'hui, Delphes renaît dans un espace numérique, entre magie et technologie. 
+                Entrez dans ce sanctuaire moderne : tirez les cartes du tarot ou laissez les astres dévoiler leur message.  
+                Le voile du futur est mince… oseras-tu le soulever ?
+            </p>
             </main>
             < Footer/>
         </div>
