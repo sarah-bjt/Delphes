@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-
 body {
     background-color: rgb(255, 170, 170);
     margin: 0;
@@ -21,6 +20,13 @@ main {
 h1 {
     font-family: "UnifrakturCook", serif;
     font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: "UnifrakturCook", serif;
+    font-size: 1.5em;
     text-align: center;
     margin: 20px 0;
 }

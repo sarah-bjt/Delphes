@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../styles/tarot-draw.css"; // Tu peux en créer un autre si besoin
+import { Link } from 'react-router-dom';
+import "../styles/tarot-draw.css"; 
 
 export default function TarotHistory() {
   const [history, setHistory] = useState([]);
@@ -10,13 +11,20 @@ export default function TarotHistory() {
   }, []);
 
   return (
-    <div className="tarot-history-container">
-      <h1 className="tarot-title">Historique des Tirages</h1>
+    <div >
+      <h1 >Historique des Tirages</h1>
+      <Link to="/tarot"><button>Retourner au tirage</button></Link>
+      <button onClick={() => {
+        localStorage.removeItem("tarotHistory");
+        setHistory([]);
+      }}>
+        Réinitialiser l'historique
+      </button>
       {history.length === 0 ? (
         <p>Aucun tirage enregistré pour l'instant.</p>
       ) : (
         history.map((session, index) => (
-          <div key={index} className="tarot-history-session">
+          <div key={index} >
             <h3>{session.date}</h3>
             <div className="tarot-results">
               {session.cards.map((card, i) => (
@@ -32,12 +40,6 @@ export default function TarotHistory() {
           </div>
         ))
       )}
-      <button onClick={() => {
-        localStorage.removeItem("tarotHistory");
-        setHistory([]);
-      }}>
-        Réinitialiser l'historique
-      </button>
     </div>
   );
 }

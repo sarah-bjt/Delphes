@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../styles/gallerie.css";
 import ZodiacCard from "./zodiac-card.jsx";
 import zodiacData from "../../data/tarot-zodiac.json";
+import "../styles/gallerie.css";
 
 export default function ZodiacSearch() {
   const [selectedElements, setSelectedElements] = useState([]);
@@ -25,7 +25,7 @@ export default function ZodiacSearch() {
     <div>
       <h1>Les signes astrologiques par types</h1>
       
-      <fieldset>
+      <fieldset >
         <legend>Choisis un ou plusieurs types:</legend>
 
         <div>

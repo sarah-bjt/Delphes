@@ -1,9 +1,8 @@
 import Header from '../components/header.jsx'; 
 import Footer from '../components/footer.jsx';
 import HoroscopeApp from "../components/horoscope-app.jsx";
-// import SigneGallerie from "../components/sign-gallery";
-import "../styles/page.css";
 import ZodiacSearch from '../components/zodiac-search.jsx';
+import "../styles/page.css";
 
 export default function ZodiacPage(){
     return (

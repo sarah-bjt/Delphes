@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import "../styles/horoscope.css";
 
-export default function AstroCard({ sign }) {
+export default function AstroCard({sign ,signName}) {
   const [astroData, setAstroData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -14,9 +15,8 @@ export default function AstroCard({ sign }) {
       }
       const data = await response.json();
 
-      // Vérification et extraction des données
       if (data[sign]) {
-        setAstroData(data[sign].slice(1)); // Exclure la première valeur vide
+        setAstroData(data[sign].slice(1)); // the first element is empty
       } else {
         throw new Error("signe non trouvé dans l'API.");
       }
@@ -35,7 +35,7 @@ export default function AstroCard({ sign }) {
 
   return (
     <div id="astro-card">
-      <h3>Prévisions pour {sign}</h3>
+      <h3>Prévisions pour {signName}</h3>
       {astroData.map((text, index) => (
         <p key={index}>{text}</p>
       ))}
