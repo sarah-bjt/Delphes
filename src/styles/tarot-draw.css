@@ -123,8 +123,8 @@
   }
   
   .tarot-card {
-    width: 60px;
-    height: 90px;
+    width: 75px;
+    height: 100px;
     flex: 0 0 auto;
     margin: 0 5px;
     scroll-snap-align: center; 
