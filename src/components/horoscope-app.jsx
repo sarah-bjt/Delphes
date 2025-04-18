@@ -5,7 +5,7 @@ import zodiacData from "../../data/tarot-zodiac.json";
 
 export default function HoroscopeApp() {
   const [birthDate, setBirthDate] = useState("");
-  const [signName, setSignName] = useState("");
+  const [setSignName] = useState("");
 
   // take off accents
   const removeAccents = (str) => {

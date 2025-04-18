@@ -1,4 +1,4 @@
-export default function TarotCard({ name, arcana, suite, upright_meaning, reversed_meaning,}) {
+export default function TarotCard({ name, upright_meaning, reversed_meaning,}) {
     return (
   <div className="card">
     <h3 className="title">{name}</h3>
