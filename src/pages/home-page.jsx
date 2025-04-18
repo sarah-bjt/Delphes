@@ -12,7 +12,7 @@ export default function HomePage(){
                 situé au pied du mont Parnasse, en Phocide, où parle l'oracle d'Apollon à travers sa prophétesse, 
                 la Pythie, qui était assise dans une salle du temple d'Apollon. Elle répondait aux questions qui lui étaient posées ; 
                 ces réponses étaient aussitôt traduites en phrases par des prêtres. Delphes abrite également l'Omphalos ou « nombril du monde ».</p>
-            <p> Ici vous pouver lire votre avenir grâce aux cartes ou aux astres.</p>
+            <p> Ici vous pouvez lire votre avenir grâce aux cartes ou aux astres.</p>
             </main>
             < Footer/>
         </div>

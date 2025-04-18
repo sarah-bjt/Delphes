@@ -80,8 +80,6 @@ export default function TarotSearch() {
           <TarotCard
             key={card.name}
             name={card.name}
-            // arcana={card.arcana}
-            // suite={card.suite}
             upright_meaning={card.upright_meaning}
             reversed_meaning={card.reversed_meaning}
           />
