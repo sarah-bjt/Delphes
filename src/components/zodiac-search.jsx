@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/zodiac-gallerie.css";
+import "../styles/gallerie.css";
 import ZodiacCard from "./zodiac-card.jsx";
 import zodiacData from "../../data/tarot-zodiac.json";
 
@@ -77,7 +77,7 @@ export default function ZodiacSearch() {
         <p>Éléments sélectionnés : {selectedElements.join(", ")}</p>
       )}
 
-      <div id="signe-gallerie">
+      <div id="gallerie">
         {filteredSigns.map((sign) => (
           <ZodiacCard
             key={sign.id}
