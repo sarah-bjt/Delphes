@@ -37,14 +37,12 @@ const getZodiacSign = (date) => {
   }
   
   const signFound = zodiacData.zodiac_signs.find(sign => {
-    // On ignore le Capricorne car déjà traité
     if (removeAccents(sign.name.toLowerCase()) === "capricorne") {
       return false;
     }
     
     const start = convertDate(sign.start_date);
     const end = convertDate(sign.end_date);
-    console.log(`Vérification : ${sign.name} (${start} - ${end})`);
     return (monthDate >= start && monthDate <= end);
   });
 

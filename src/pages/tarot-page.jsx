@@ -1,7 +1,6 @@
 import Header from '../components/header.jsx'; 
-import Footer from '../components/footer';
-import TarotGallerie from "../components/tarot-gallery";
-import TarotDraw from "../components/tirage-tarot";
+import Footer from '../components/footer.jsx';
+import TarotDraw from "../components/tarot-draw.jsx";
 import "../styles/page.css";
 
 export default function TarotPage(){
@@ -9,9 +8,7 @@ export default function TarotPage(){
         <div className="page-container">
             <Header/>
             <main>
-            <h1>Les Cartes de Tarot</h1>
-            <TarotDraw/>
-            {/* <TarotGallerie/> */}
+                <TarotDraw/>
             </main>
             <Footer/>
         </div>
